@@ -12,9 +12,20 @@ def generate_head(title):
     return head
 
 
-def generate_page(head, body):
+def generate_navbar():
+    return f"""
+        &nbsp;
+        <a href="../about.html">О нас</a>
+        &nbsp;&nbsp;
+        <a href="../contacts.html">Сontacts</a>
+            <hr/>
+    """
+
+
+def generate_page(head, body, navbar=generate_navbar()):
     page = f"""<html>
     {head}
+    {navbar}
     {body}
     </html>
     """
