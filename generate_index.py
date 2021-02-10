@@ -13,12 +13,11 @@ def generate_head(title):
 
 
 def generate_navbar():
-    base_url = 'fluffy-winner'
     return f"""
         &nbsp;
-        <a href="{base_url}/about.html">О нас</a>
+        <a href="about.html">О нас</a>
         &nbsp;&nbsp;
-        <a href="{base_url}/contacts.html">Сontacts</a>
+        <a href="contacts.html">Сontacts</a>
             <hr/>
     """
 
