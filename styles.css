@@ -1,0 +1,32 @@
+body {
+    background: purple;
+    color: white;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background: black;
+}
+
+h1 {
+    color: red;
+    font-size: 42pt;
+    font-family: monospace, sans-serif;
+}
+
+
+.indent {
+    margin-left: 33px;
+}
+
+.space-below {
+    margin-bottom: 70px;
+}
+
+#second-paragraph {
+    color: lightblue;
+}

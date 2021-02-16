@@ -1,12 +1,13 @@
 # coding: utf-8
 from horoscope import generate_prophecies
-from datetime import datetime as dt
+from datetime import datetime as dt, timedelta
 
 
 def generate_head(title):
     head = f"""<head>
     <meta charset='utf-8'>
     <title>{title}</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
     </head>
     """
     return head
@@ -59,7 +60,9 @@ def generate_body(header, paragraphs):
 
 # body = generate_body(header="Гороскоп на 2018-11-12", paragraphs=generate_prophecies())
 
-today = dt.now().date()
+# today = dt.now().date()
+today = dt.today() + timedelta(days=1)
+today = today.strftime('%d %m %Y')
 save_page(title="Гороскоп на сегодня",
           header="Что день " + str(today) + " готовит",
           paragraphs=generate_prophecies())
